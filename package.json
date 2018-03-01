@@ -1,0 +1,19 @@
+{
+  "name": "basic",
+  "version": "0.1.0",
+  "description": "Just some simple tasks.",
+  "main": "index.js",
+  "author": "Max Wienold",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-markdown": "^0.7.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

@@ -1,0 +1,31 @@
+.content-wrapper-landing
+	padding-top: 120px
+	.content-wrapper-inner
+		.section-wrapper
+			
+			margin-bottom: -10vw
+			padding-bottom: -10vw
+			&:nth-child(even)
+				.landing-questions
+					background-color: lighten( $base-grey, 45%)
+				.diagonals
+					transform: skewY(5deg)
+					background-color: lighten( $base-grey, 45%)
+
+
+.landing-questions
+	min-height: 500px
+	position: relative
+	margin-top: -10vw
+	padding-top: 10vw
+
+
+.diagonals
+	//
+	z-index: 1000
+	height: 10vw
+	width: 100%
+	display: inline-block
+	background-color: #fff
+	transform-origin: 100% 100%
+	transform: skewY(-5deg)

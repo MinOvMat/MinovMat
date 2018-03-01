@@ -1,0 +1,184 @@
+/* _________________*/
+/*                   */
+/*	- MEDIA-QUERIES -*/
+/*   _________________*/
+/*                     */
+
+/* desktop-view */
+
+@media (min-width: $tablet)
+	.header-logo
+		.header-logo-kreis
+			width: 100%
+
+		.gestaltet_kreis
+			opacity: 0
+
+		.quer_kreis_
+			opacity: 0
+
+		#g_1_kreis_, #punkt_1_kreis_
+			opacity: 1
+
+		#q_1_kreis_
+			opacity: 1
+			transform: translateX(22.7%)
+
+	.navigation
+		width: $navigation-width
+		height: 100vh
+		position: fixed
+		background-color: #fff
+		overflow: hidden
+
+	.navi
+		padding-right: 15px
+		li
+			text-align: right
+
+	.navi-sub
+		margin: 10px 0 0 0
+	.navi-sub-show
+		&:hover + li
+			left: 0
+
+	.navi-sub-speci
+		margin: 7px 0 0 0
+
+	.navi-sub-hide
+		position: relative
+		left: 120%
+		transition: all ease-in-out 300ms
+
+	.identifier
+		position: fixed
+		height: $identifier-diameter
+		width: $identifier-diameter
+		left: #{$navigation-width - ($identifier-diameter / 2) - 10px}
+		top: calc(50% + 100px)
+		border-radius: 50%
+	.identifier-sub
+		display: inline-block
+		position: relative
+		height: 100%
+		width: 100%
+
+		border-radius: 50%
+	.identifier-video
+		z-index: 1100
+		background-color: $base-green
+	.identifier-background
+		display: inline-block
+		position: absolute
+		background-color: white
+		left: #{-($identifier-diameter / 2 + 5px) }
+		top: -15px
+		z-index: 1000
+		height: calc(100% + 30px)
+		width: calc(100% + 15px)
+	.identifier-shadow
+		position: absolute
+		box-sizing: content-box
+		left: -5px
+		top: -5px
+		z-index: 100
+		border: 5px #fff solid
+	.identifier-background-shadow
+		display: none
+
+/* For tablet-viewport */
+@media (max-width: $tablet)
+
+	.header-site
+		display: inline
+		position: fixed
+		height: $header-height
+		width: 100%
+		background-color: white
+
+	.header-logo
+		height: auto
+		display: inline-block
+		width: 170px
+		left: 25px
+		top: 0
+		z-index: 200
+
+		padding: 5px
+
+	.gestaltet_kreis
+		opacity: 1
+
+	.quer_kreis_
+		opacity: 1
+
+	#g_1_kreis_, #punkt_1_kreis_
+		opacity: 1
+
+	#q_1_kreis_
+		opacity: 1
+		transform: initial
+	#Kreis_1_kreis_
+		opacity: 0
+
+	.navigation
+		position: fixed
+		width: 0
+		height: 100vh
+		background-color: rgba(33,33,33,.99)
+		left: 50%
+		z-index: 1500
+		overflow: hidden
+		transition: all ease 200ms
+	.navigation:target
+		width: 100%
+		left: 0
+	.navigation-mobile-close
+		display: inline-block
+
+	.navi
+		display: inline-block
+		padding: 0
+		li
+			text-align: left
+			color:  white
+			a
+				color: #fff
+	.navi-sub-hide
+		left: 0
+	.navi-sub-speci
+		margin-top: 22px
+
+
+	.identifier
+		transform: rotate(-45deg)
+		top: calc( 100vh - #{$identifier-diameter} - 10px)
+		left: 10px
+		position: fixed
+
+	.identifier-background
+		height: 300%
+		top: -100%
+		display: inline-block
+		position: absolute
+	.identifier-background-shadow
+		z-index: 100
+
+
+	.content-wrapper
+		width: 100%
+
+		left: 0
+	.footer-wrapper
+		width: calc(100% - (#{$navigation-width} - 30px))
+
+
+/* For mobile-phone-viewport */
+
+@media (max-width: $mobile)
+	.identifier
+		display: none
+
+	.footer-wrapper-s
+		width: 100%
+		padding: 0 10px

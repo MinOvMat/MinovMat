@@ -1,0 +1,79 @@
+/*Typography*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Raleway:400,400i,600,600i&subset=latin-ext')
+@font-face
+	font-family: DoulosSILW
+	src: url("DoulosSIL-R.woff")
+
+$font-display: 'Josefin Sans', 'Arial', sans-serif
+$font-running: 'Raleway', sans-serif
+$font-serif: 'DoulosSILW', serif
+/* general classes*/
+
+.font-display
+	font-family: $font-display
+	font-style: normal
+	font-weight: 700
+.font-weight-normal
+	font-weight: 400
+.font-running
+	font-family: $font-running
+	color: #000
+.font-giant
+	font-size: 3.5rem
+	font-weight: 700
+	font-style: normal
+.font-big
+	font-size: 3rem
+.font-medi
+	font-size: 2rem
+	font-weight: 700
+.font-normal
+	font-size: 1.5rem
+	line-height: 125%
+.font-small
+	font-size: 1rem
+
+
+.font-space-medi
+	letter-spacing: .1em
+
+.font-serif
+	font-family: $font-serif
+
+
+/*site-specific styles*/
+.font-head
+	text-transform: uppercase
+	line-height: 80%
+	display: inline-block
+	padding-bottom: $head-padding
+	position: relative
+
+	z-index: 301
+
+.font-navi-side
+	margin-top: -5px
+	line-height: 50%
+.font-navi
+	line-height: 95%
+
+.font-navi-links a
+	color: inherit
+
+@media (max-width: $tablet)
+	.font-navi
+		font-size: 20px
+
+
+.font-navi
+
+.font-navi-links
+	text-decoration: none
+	color: $base-grey
+	text-transform: uppercase
+	transition: all ease-in-out 200ms
+	&:hover
+		font-size: 1.75em
+		color: #000
