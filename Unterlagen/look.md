@@ -14,16 +14,18 @@ The existing site foremost lacked intuitive structure and also in the personal p
 
 #### Tech
 
-For the amount of content that would be on the site, a CMS that relies on a database seemed to extensive. For this reason, I decided to use Jekyll. Jekyll is a static site generator that is able to build templates and DOM-trees based on the data defined.
+For the amount of content that would be on the site, a CMS that relies on a database seemed too extensive. For this reason, I decided to use Jekyll. Jekyll is a static site generator that is able to build templates and DOM-trees based on data defined in YAML-frontmatter.
 
 
 ## minpho
 ### Briefing
 
-The Photographer Klaus Schick, based in Bielefeld needed a site to showcase his **mi**ndfull **pho** tography. It should have a simplistic calm look and focus on the content. A 
+The Photographer Klaus Schick, based in Bielefeld needed a site to showcase his **mi**ndfull **pho**tography. It should have a simplistic, calm look and focus on the content, that are: the images.
 
 ### Process
-In
+
+A logo and corporate design was already existent. I  incorporated the colors, logo and elements in the site and
+
 
 ### Tech
 To make it possible for the client to mantain the
@@ -43,3 +45,7 @@ Most Content Management Systems make assumptions on how your content is to be us
 ## lifetime
 #### Use Case
 lifetime helps freelancers in keeping track of the work hours, they spend on their projects. The user can define project specific directories and files. These are then tracked if they are worked with. Also a fee can be calculated and used preformatted to be used in billings.
+
+## Greifswalder Literaturfrühling
+
+## Lesen Gegen Die Angst
