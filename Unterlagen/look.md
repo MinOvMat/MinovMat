@@ -1,4 +1,4 @@
-If you need an impression of what i can do for you,
+If you need an impression of what I can do for you,
 here are some of the projects i have worked on recently.
 And as always: Enjoy!
 

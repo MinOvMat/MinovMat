@@ -7,22 +7,63 @@
 /* desktop-view */
 
 @media (min-width: $tablet)
+	.header-site
+		display: none
 	.header-logo
+		transition: 800ms ease-in-out all
 		.header-logo-kreis
 			width: 100%
 
 		.gestaltet_kreis
 			opacity: 0
 
-		.quer_kreis_
+		.u_kreis, .e_kreis, .r_kreis
 			opacity: 0
+		.Kreis_kreis
+			transition: 200ms all ease-in-out
 
-		#g_1_kreis_, #punkt_1_kreis_
-			opacity: 1
+		&:hover
+			width: calc(#{$navigation-width} - 20px)
+			left: 10px
+			top: 75px
+			.u_kreis
+				transition: 150ms all ease-in-out 600ms
+			.e_kreis
+				transition: 150ms all ease-in-out 400ms
+			.r_kreis
+				transition: 150ms all ease-in-out 200ms
+			#g_1_kreis_, #punkt_1_kreis_
+				opacity: 1
+			#e1_1_kreis_
+				transition: 100ms all ease-in-out 50ms
+			#s_1_kreis_
+				transition: 100ms all ease-in-out 100ms
+			#t_1_kreis_3_
+				transition: 100ms all ease-in-out 150ms
+			#a_1_kreis_
+				transition: 100ms all ease-in-out 200ms
+			#l_1_kreis_
+				transition: 100ms all ease-in-out 250ms
+			#t_1_2_
+				transition: 100ms all ease-in-out 700ms
+			#e2_1_kreis_
+				transition: 100ms all ease-in-out 500ms
+			#t2_1_kreis_
+				transition: 100ms all ease-in-out 600ms
+
+
+
+			#q_1_kreis_
+					transition: 800ms ease-in-out all
+					transform: translateX(0)
+			*
+				opacity: 1
+			.Kreis_kreis
+				opacity: 0
 
 		#q_1_kreis_
-			opacity: 1
 			transform: translateX(22.7%)
+
 
 	.navigation
 		width: $navigation-width
@@ -30,6 +71,7 @@
 		position: fixed
 		background-color: #fff
 		overflow: hidden
+		z-index: 300
 
 	.navi
 		padding-right: 15px
@@ -50,46 +92,12 @@
 		left: 120%
 		transition: all ease-in-out 300ms
 
-	.identifier
-		position: fixed
-		height: $identifier-diameter
-		width: $identifier-diameter
-		left: #{$navigation-width - ($identifier-diameter / 2) - 10px}
-		top: calc(50% + 100px)
-		border-radius: 50%
-	.identifier-sub
-		display: inline-block
-		position: relative
-		height: 100%
-		width: 100%
-
-		border-radius: 50%
-	.identifier-video
-		z-index: 1100
-		background-color: $base-green
-	.identifier-background
-		display: inline-block
-		position: absolute
-		background-color: white
-		left: #{-($identifier-diameter / 2 + 5px) }
-		top: -15px
-		z-index: 1000
-		height: calc(100% + 30px)
-		width: calc(100% + 15px)
-	.identifier-shadow
-		position: absolute
-		box-sizing: content-box
-		left: -5px
-		top: -5px
-		z-index: 100
-		border: 5px #fff solid
-	.identifier-background-shadow
-		display: none
 
 /* For tablet-viewport */
 @media (max-width: $tablet)
 
 	.header-site
+
 		display: inline
 		position: fixed
 		height: $header-height
@@ -102,22 +110,10 @@
 		width: 170px
 		left: 25px
 		top: 0
-		z-index: 200
+
 
 		padding: 5px
 
-	.gestaltet_kreis
-		opacity: 1
-
-	.quer_kreis_
-		opacity: 1
-
-	#g_1_kreis_, #punkt_1_kreis_
-		opacity: 1
-
-	#q_1_kreis_
-		opacity: 1
-		transform: initial
 	#Kreis_1_kreis_
 		opacity: 0
 
@@ -133,6 +129,7 @@
 	.navigation:target
 		width: 100%
 		left: 0
+		top: 0
 	.navigation-mobile-close
 		display: inline-block
 
@@ -164,7 +161,8 @@
 	.identifier-background-shadow
 		z-index: 100
 
-
+	.identifier-video
+		transform: rotate(45deg)
 	.content-wrapper
 		width: 100%
 
@@ -182,3 +180,13 @@
 	.footer-wrapper-s
 		width: 100%
 		padding: 0 10px
+
+	.landing-portfolio
+		height: auto
+	.landing-portfolio-item
+		height: 200px
+	.landing-portfolio-item-img
+		top: -40px
+		width: 180%
+		&:hover
+			top: -30px

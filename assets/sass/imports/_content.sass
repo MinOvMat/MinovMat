@@ -1,9 +1,9 @@
 /*CONTENT-SECTION*/
 .content-wrapper, .content-wrapper-landing
-	overflow-y: hidden
-	padding-top: 100px
+	overflow: hidden
+
 	position: relative
-	z-index: -3000
+
 	margin-bottom: $footer-height
 	min-height: 100vh
 	background-color: #fff
@@ -11,6 +11,10 @@
 .content-wrapper
 	left: #{$navigation-width}
 	width: calc(100% - #{$navigation-width})
+	overflow-y: hidden
+	padding: 105px 20px 50px 20px
+	.content-wrapper-inner
+		padding: 20px 5px 10px 5px
 
 .content-wrapper-landing
 	width: 100%
@@ -18,17 +22,5 @@
 	display: inline-block
 
 	position: relative
-	left: 20px
-
-
-	&:after
-		content: ""
-		position: absolute
-		top: 35px
-		left: 50px
-		width: 100%
-		height: calc(100% - #{$head-padding})
-		background-color: $base-green
-		z-index: 300
-		transform: rotate(-5deg)
-		margin-bottom: 50%
+.space
+	padding-bottom: 30px

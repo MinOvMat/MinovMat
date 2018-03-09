@@ -7,19 +7,21 @@ $grid-row-heigth: calc((((100vw - #{$navigation-width}) / 36) - .3px ))
 	grid-template: repeat(36, $grid-row-heigth) / repeat(8, 1fr)
 
 .grid-item
-	background-color: $base-green
+	background-color: #fff
 	border: 5px solid #fff
+	overflow: hidden
+	position: relative
 
 
 .grid-item-square
-	grid-row: span 9
+	grid-row: span 16
 	grid-column: span 3
 
 .grid-item-square-small
 	grid-row: span 6
 	grid-column: span 2
 .grid-item-square-end
-	grid-row: span 9
+	grid-row: span 18
 	grid-column: 1 / span 3
 
 .grid-item-long
@@ -50,12 +52,12 @@ $grid-row-heigth: calc((((100vw - #{$navigation-width}) / 36) - .3px ))
 		grid-column: 5 / span 4
 
 @media (max-width: $mobile)
-	.grid-container
+	.grid-container-s
 		display: grid
-		grid-template: repeat(36, calc(100vh / 12)) / repeat(8, 1fr)
+		grid-template: repeat(15, calc(100vh / 12)) / repeat(8, 1fr)
 
 	.grid-item-s
-		grid-row: span 8
+		grid-row: span 5
 		grid-column: span 8
 
 	.grid-item-square-small
